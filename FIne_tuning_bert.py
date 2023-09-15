@@ -15,7 +15,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model', type=str, default='roberta-base', help='set model type')
 parser.add_argument('--batch_size', type=int, default=32, help='set batch size')
 parser.add_argument('--epochs', type=int, default=10, help='set number of epochs')
-parser.add_argument('--retrain', type=str, default='True', help='set retrain')
 args = parser.parse_args()
 # specify GPU
 device = torch.device("cuda")
